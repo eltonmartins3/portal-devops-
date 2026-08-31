@@ -1,7 +1,7 @@
 # Portal Acadêmico DevOps
 Projeto-base para atividade prática de colaboração com Git e GitHub.
 
-## Objetivo
+## Objetivo/.
 Evoluir uma página web existente por meio de trabalho colaborativo.
 
 ## Tecnologias
@@ -10,5 +10,9 @@ Evoluir uma página web existente por meio de trabalho colaborativo.
 - JavaScript
 - GitHub Pages
 
-## Equipe
-Registrar integrantes, papéis e link da página publicada.
+## Equipe 
+- Thiago Oliveira > Líder 
+- Vitor Carosio > desenvolvedor de estrutura;
+- João Pedro Santana > desenvolvedor de interface;
+- Leandro Roussoulieres > desenvolvedor de funcionalidades;
+- Elton Martins > Revisor
