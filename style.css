@@ -102,3 +102,114 @@ form button {
   width: 35px;
   height: 35px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* Fundo claro (invertido do #1f2937) */
+  background: #f4f4f5;
+  color: #1f2937; 
+}
+
+.topo {
+  /* Fundo escuro invertido do amarelo bebê */
+  background: #2b2600;
+  color: #fef08a;
+  padding: 40px 24px;
+  text-align: center; 
+}
+
+.topo button {
+  background: #f4a261; /* Tom complementar vibrante para o botão no topo escuro */
+  color: #1d1d1f;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer; 
+}
+
+.secao {
+  width: min(1000px, 92%);
+  margin: 32px auto;
+  /* Seção agora é escura para inverter o padrão anterior */
+  background: #1f2937;
+  color: #f4f4f5; 
+  padding: 24px;
+  border-radius: 12px; 
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; 
+}
+
+.card {
+  border: 1px solid #374151;
+  padding: 18px;
+  border-radius: 10px;
+  /* Card escuro invertido do amarelo bebê */
+  background: #383204;
+  color: #fef08a; 
+}
+
+form {
+  display: grid;
+  gap: 10px; 
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  background: #374151;
+  color: #f4f4f5;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9ca3af;
+}
+
+form button {
+  width: fit-content;
+  padding: 10px 16px;
+  background: #fef08a;
+  color: #1d1d1f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .cards { grid-template-columns: 1fr; } 
+}
+
+/* Campo flutuante */
+.whatsapp-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-flutuante:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-flutuante img {
+  width: 35px;
+  height: 35px;
+}
