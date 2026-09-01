@@ -7,6 +7,9 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <!-- Botão de Modo Noturno no Canto Superior Direito -->
+ <button id="botaoModoNoturno" class="btn-modo-noturno" aria-label="Alternar modo noturno">🌙</button>
+
  <header class="topo">
  <h1>Portal Acadêmico DevOps</h1>
  <p>Ambiente de serviços acadêmicos e colaboração.</p>
@@ -28,6 +31,10 @@
  <h3>Atendimento</h3>
  <p>Canal para dúvidas e solicitações.</p>
  </article>
+ <article class="card">
+ <h3>Disciplinas</h3>
+ <p>Consulta de grades, ementas e horários.</p>
+ </article>
  </div>
  </section>
 <section class="secao">
@@ -35,6 +42,10 @@
  <form id="formContato">
  <label for="nome">Nome</label>
  <input id="nome" type="text" placeholder="Digite seu nome">
+ 
+ <label for="email">E-mail</label>
+ <input id="email" type="email" placeholder="Digite seu e-mail">
+
  <label for="mensagem">Mensagem</label>
  <textarea id="mensagem" placeholder="Digite sua solicitação"></textarea>
  <button type="submit">Enviar</button>
@@ -42,6 +53,12 @@
  <p id="resposta"></p>
  </section>
  </main>
+
+ <!-- Botão Flutuante do WhatsApp -->
+ <a href="https://wa.me/SEUNUMERO" class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer">
+   <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp">
+ </a>
+
  <script src="script.js"></script>
 </body>
 </html>
