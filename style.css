@@ -1,54 +1,216 @@
 * {
- box-sizing: border-box; }
+  box-sizing: border-box;
+}
+
 body {
- margin: 0;
- font-family: Arial, sans-serif;
- background: #f4f5f7;
- color: #1d1d1f; }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f5;
+  color: #1f2937;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
 .topo {
- background: #00537a;
- color: white;
- padding: 40px 24px;
- text-align: center; }
+  background: #fef08a;
+  color: #1d1d1f;
+  padding: 40px 24px;
+  text-align: center;
+  transition: 0.3s;
+}
+
 .topo button {
- background: #e6007e;
- color: white;
- border: none;
- padding: 12px 18px;
- border-radius: 8px;
- cursor: pointer; }
+  background: #795468;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
 .secao {
- width: min(1000px, 92%);
- margin: 32px auto;
- background: white;
- padding: 24px;
- border-radius: 12px; }
+  width: min(1000px, 92%);
+  margin: 32px auto;
+  background: #ffffff;
+  color: #1d1d1f;
+  padding: 24px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
 .cards {
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- gap: 16px; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
 .card {
- border: 1px solid #ddd;
- padding: 18px;
- border-radius: 10px;
- background: #ffffff; }
+  border: 1px solid #d1d5db;
+  padding: 18px;
+  border-radius: 10px;
+  background: #fef08a;
+  color: #1d1d1f;
+
+  /* Efeito suave */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* ========================================
+   EFEITO HOVER NOS CARDS
+======================================== */
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 83, 122, 0.25);
+  border-color: #00537a;
+}
+
+/* ========================================
+   FORMULÁRIO
+======================================== */
 
 form {
- display: grid;
- gap: 10px; }
-input, textarea {
- width: 100%;
- padding: 10px;
- border: 1px solid #ccc;
- border-radius: 8px; }
+  display: grid;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1d1d1f;
+}
+
 form button {
- width: fit-content;
- padding: 10px 16px;
- background: #00537a;
- color: white;
- border: none;
- border-radius: 8px; }
+  width: fit-content;
+  padding: 10px 16px;
+  background: #fef08a;
+  color: #1d1d1f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ========================================
+   BOTÃO MODO NOTURNO
+======================================== */
+
+.btn-modo-noturno {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  z-index: 2000;
+
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   MODO NOTURNO
+======================================== */
+
+body.modo-noturno {
+  background: #1f2937;
+  color: #f4f4f5;
+}
+
+body.modo-noturno .topo {
+  background: #2b2600;
+  color: #fef08a;
+}
+
+body.modo-noturno .topo button {
+  background: #f4a261;
+  color: #1d1d1f;
+}
+
+body.modo-noturno .secao {
+  background: #1f2937;
+  color: #f4f4f5;
+  border: 1px solid #374151;
+}
+
+body.modo-noturno .card {
+  background: #383204;
+  color: #fef08a;
+  border-color: #4b5563;
+}
+
+body.modo-noturno input,
+body.modo-noturno textarea {
+  background: #374151;
+  color: #f4f4f5;
+  border-color: #4b5563;
+}
+
+body.modo-noturno input::placeholder,
+body.modo-noturno textarea::placeholder {
+  color: #9ca3af;
+}
+
+body.modo-noturno form button {
+  background: #fef08a;
+  color: #1d1d1f;
+}
+
+body.modo-noturno .btn-modo-noturno {
+  background: #374151;
+  color: #ffffff;
+}
+
+/* ========================================
+   WHATSAPP
+======================================== */
+
+.whatsapp-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-flutuante:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-flutuante img {
+  width: 35px;
+  height: 35px;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
 @media (max-width: 700px) {
- .cards { grid-template-columns: 1fr; } 
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
 }
