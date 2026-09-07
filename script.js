@@ -47,8 +47,8 @@ campoNome.focus();
 return;
 }
 
-if (nome.length < 3) {
-resposta.textContent = "O nome deve ter pelo menos 3 caracteres.";
+if (nome.length < 5) {
+resposta.textContent = "O nome deve ter pelo menos 5 caracteres.";
 resposta.style.color = "#d60000";
 campoNome.focus();
 return;
