@@ -43,12 +43,16 @@ body {
   gap: 16px;
 }
 
+/* ========================================
+   ABAS / CARDS (ALTERADO)
+======================================== */
+
 .card {
-  border: 1px solid #d1d5db;
+  border: 1px solid #003d5b;
   padding: 18px;
   border-radius: 10px;
-  background: #fef08a;
-  color: #1d1d1f;
+  background: #00537a; /* Novo tom principal das abas */
+  color: #ffffff;      /* Cor do texto ajustada para legibilidade */
 
   /* Efeito suave */
   transition: all 0.3s ease;
@@ -61,8 +65,9 @@ body {
 
 .card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 10px 25px rgba(0, 83, 122, 0.25);
-  border-color: #00537a;
+  box-shadow: 0 10px 25px rgba(0, 83, 122, 0.35);
+  background: #006899; /* Destaque sutil ao passar o mouse */
+  border-color: #003d5b;
 }
 
 /* ========================================
@@ -143,10 +148,11 @@ body.modo-noturno .secao {
   border: 1px solid #374151;
 }
 
+/* Abas ajustadas para o Modo Noturno */
 body.modo-noturno .card {
-  background: #383204;
-  color: #fef08a;
-  border-color: #4b5563;
+  background: #0e3a50;
+  color: #e2e8f0;
+  border-color: #1e5a78;
 }
 
 body.modo-noturno input,
@@ -208,9 +214,7 @@ body.modo-noturno .btn-modo-noturno {
 ======================================== */
 
 @media (max-width: 700px) {
-
   .cards {
     grid-template-columns: 1fr;
   }
-
 }
