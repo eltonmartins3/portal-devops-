@@ -29,7 +29,11 @@ Evoluir uma página web existente por meio de trabalho colaborativo.
 - [x] Alterar cores
 - [x] Colocar validação nos campos
 - [x] Adicionar ícones no canal de atendimento
+- [x] Alterar a fonte da página (Times New Roman)
+- [x] Revisar a cor dos cartões de serviço
+- [x] Ajustar o limite de caracteres no campo "nome"
 
 ## 🌐 Deploy
 
-Acesse o projeto online: [Portal Acadêmico DevOps](https://eltonmartins3.github.io/portal-devops-/)
+Acesse a demonstração online do projeto:  
+👉 [Portal Acadêmico DevOps](https://eltonmartins3.github.io/portal-devops-/)
